@@ -1,0 +1,4 @@
+{
+  "dotnet.defaultSolution": "GameStore.slnx",
+  "java.project.explorer.showNonJavaResources": false
+}
