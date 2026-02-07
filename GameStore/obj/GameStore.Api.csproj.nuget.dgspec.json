@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "f:\\.NET Training\\Practice\\.NETpractice\\GameStore\\GameStore.Api.csproj": {}
+    "F:\\.NET Training\\Practice\\.NETpractice\\GameStore\\GameStore.Api.csproj": {}
   },
   "projects": {
-    "f:\\.NET Training\\Practice\\.NETpractice\\GameStore\\GameStore.Api.csproj": {
+    "F:\\.NET Training\\Practice\\.NETpractice\\GameStore\\GameStore.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "f:\\.NET Training\\Practice\\.NETpractice\\GameStore\\GameStore.Api.csproj",
+        "projectUniqueName": "F:\\.NET Training\\Practice\\.NETpractice\\GameStore\\GameStore.Api.csproj",
         "projectName": "GameStore.Api",
-        "projectPath": "f:\\.NET Training\\Practice\\.NETpractice\\GameStore\\GameStore.Api.csproj",
+        "projectPath": "F:\\.NET Training\\Practice\\.NETpractice\\GameStore\\GameStore.Api.csproj",
         "packagesPath": "C:\\Users\\Windows\\.nuget\\packages\\",
-        "outputPath": "f:\\.NET Training\\Practice\\.NETpractice\\GameStore\\obj\\",
+        "outputPath": "F:\\.NET Training\\Practice\\.NETpractice\\GameStore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
