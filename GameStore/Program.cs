@@ -2,6 +2,7 @@ using GameStore.Api.Dtos;
 
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
+const string GetGameEndPointName = "GetGameById";
 
 List<GameDto> games = [
     new GameDto(1, "The Legend of Zelda: Breath of the Wild", "Action-Adventure", 59.99m, new DateOnly(2017, 3, 3)),
@@ -13,5 +14,26 @@ List<GameDto> games = [
 
 // GET / games
 app.MapGet("/games", () => games);
+
+// GET / games/{GameId}
+app.MapGet("/games/{GameId}", (int GameId) => games.Find(g => g.GameId == GameId)).WithName(GetGameEndPointName);
+
+// POST / games
+app.MapPost("/games", (CreateGameDto newGame) =>
+{
+    GameDto game = new(
+
+    games.Count + 1,
+        newGame.Name,
+        newGame.Genre,
+        newGame.Price,
+        newGame.ReleaseDate
+    );
+    games.Add(game);
+    return Results.CreatedAtRoute(GetGameEndPointName, new { GameId = game.GameId }, game);
+
+}
+);
+
 
 app.Run();
