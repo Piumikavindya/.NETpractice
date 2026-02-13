@@ -1,2 +1,18 @@
 
 GET http://localhost:5165/games
+
+###
+
+GET http://localhost:5165/games/1
+
+
+###
+
+POST http://localhost:5165/games
+Content-Type: application/json
+{
+    "Name": "Cyberpunk 2077",
+    "Genre": "RPG",
+    "Price": 59.99,
+    "ReleaseDate": "2020-12-10",
+}
